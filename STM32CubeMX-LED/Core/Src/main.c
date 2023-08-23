@@ -93,7 +93,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
+//Ld2 pin refers to "PA5" pin, which is D13 pin to which led is connected
+HAL_GPIO_TogglePin(Ld2_GPIO_Port,Ld2_Pin); //Toggle LED
 
+HAL_Delay(1000); //Delay 1 Seconds
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
