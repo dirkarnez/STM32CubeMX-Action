@@ -19,6 +19,7 @@ VOLUME /src/workspace
 CMD cd /src/workspace && \
 aarch64-none-elf-g++ --version && \
 cd STM32CubeMX-LED && \
-make && \
+make GCC_PATH="" && \
+cd build && \
 zip --symlinks -r STM32CubeMX-LED-v1.0.0-gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.zip . && \
 exit
