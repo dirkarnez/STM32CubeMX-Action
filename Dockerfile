@@ -20,9 +20,10 @@ VOLUME /src/workspace
 
 CMD cd /src/workspace && \
 aarch64-none-elf-g++ --version && \
+arm-none-eabi-gcc --version && \
 echo $PATH && \
 which aarch64-none-elf-g++ && \
-ls -R && \
+which arm-none-eabi-gcc && \
 cd STM32CubeMX-LED && \
 make GCC_PATH="/home/ubuntu/gcc-arm-none-eabi-10.3-2021.10/bin" && \
 cd build && \
