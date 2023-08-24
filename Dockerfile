@@ -18,6 +18,7 @@ VOLUME /src/workspace
 
 CMD cd /src/workspace && \
 aarch64-none-elf-g++ --version && \
+ls -R && \
 cd STM32CubeMX-LED && \
 make GCC_PATH="/home/ubuntu/AC6/bin" && \
 cd build && \
