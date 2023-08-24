@@ -18,6 +18,7 @@ jobs:
 
       - name: Build the stack
         run: docker-compose up --build && docker-compose down
+        working-directory: workspace
         
 #       - name: Archive Release
 #         uses: thedoctor0/zip-release@master
