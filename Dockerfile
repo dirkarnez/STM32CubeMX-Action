@@ -27,5 +27,5 @@ which arm-none-eabi-gcc && \
 cd STM32CubeMX-LED && \
 make GCC_PATH="/home/ubuntu/gcc-arm-none-eabi-10.3-2021.10/bin" && \
 cd build && \
-zip --symlinks -r STM32CubeMX-LED-v1.0.0-gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf.zip . && \
+zip --symlinks -r STM32CubeMX-LED-v1.0.0-gcc-arm-none-eabi-10.3-2021.10.zip . && \
 exit
