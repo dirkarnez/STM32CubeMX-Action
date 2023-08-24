@@ -27,6 +27,6 @@ jobs:
       - name: Release prebuilt
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "workspace/STM32CubeMX-LED/build/${{ env.targetZip }}"
+          artifacts: "STM32CubeMX-LED/build/${{ env.targetZip }}"
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
