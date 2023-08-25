@@ -93,10 +93,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-//Ld2 pin refers to "PA5" pin, which is D13 pin to which led is connected
-HAL_GPIO_TogglePin(Ld2_GPIO_Port,Ld2_Pin); //Toggle LED
 
-HAL_Delay(1000); //Delay 1 Seconds
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -151,14 +148,14 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(Ld2_GPIO_Port, Ld2_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : PA5 */
-  GPIO_InitStruct.Pin = GPIO_PIN_5;
+  /*Configure GPIO pin : Ld2_Pin */
+  GPIO_InitStruct.Pin = Ld2_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  HAL_GPIO_Init(Ld2_GPIO_Port, &GPIO_InitStruct);
 
 }
 
